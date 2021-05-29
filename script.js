@@ -36,7 +36,27 @@ console.log(calculate(5, 10, "*"))
 console.log(calculate(5, 10, "/"))
 
 document.addEventListener("DOMContentLoaded", function() {
+    var tasks = ["Drink water", "Learn JS"]
     var imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png"
-    var smileyImageElement = document.getElementById("smiley")
-    smileyImageElement.src = imageUrl
+
+    function generateTask(taskName) {
+        var containerElement = document.createElement("div")
+        containerElement.style = "border: 1px solid grey; width: 200px; padding: 20px; margin-top: 10px;"
+
+        var imageElement = new Image()
+        imageElement.style = "width: 50px; height: 50px;"
+        imageElement.src = imageUrl
+        containerElement.appendChild(imageElement)
+
+        var labelElement = document.createElement("label")
+        labelElement.innerHTML = taskName
+        containerElement.appendChild(labelElement)
+
+        var bodyElement = document.getElementsByTagName("body")[0]
+        bodyElement.appendChild(containerElement)
+    }
+
+    tasks.forEach(task => {
+        generateTask(task)
+    })
 })
