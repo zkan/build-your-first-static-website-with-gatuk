@@ -36,7 +36,7 @@ console.log(calculate(5, 10, "*"))
 console.log(calculate(5, 10, "/"))
 
 document.addEventListener("DOMContentLoaded", function() {
-    var tasks = ["Drink water", "Learn JS"]
+    var tasks = ["Drink water", "Learn JS", "Learn Python"]
     var imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png"
 
     function generateTask(taskName) {
