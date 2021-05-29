@@ -17,3 +17,20 @@ function add(a, b) {
 
 var result = add(3, 10)
 console.log("Result:", result)
+
+function calculate(a, b, operator) {
+    if (operator == "+") {
+        return a + b
+    } else if (operator == "-") {
+        return a - b
+    } else if (operator == "*") {
+        return a * b
+    } else {
+        return a / b
+    }
+}
+
+console.log(calculate(5, 10, "+"))
+console.log(calculate(5, 10, "-"))
+console.log(calculate(5, 10, "*"))
+console.log(calculate(5, 10, "/"))
