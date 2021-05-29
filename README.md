@@ -1,2 +1,3 @@
-# build-your-first-static-website-with-gatuk
-Build Your First Static Website with P'Gatuk
+# Build Your First Static Website with P'Gatuk
+
+Slides: https://bit.ly/3oVptvx
