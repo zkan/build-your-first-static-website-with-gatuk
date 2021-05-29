@@ -34,3 +34,9 @@ console.log(calculate(5, 10, "+"))
 console.log(calculate(5, 10, "-"))
 console.log(calculate(5, 10, "*"))
 console.log(calculate(5, 10, "/"))
+
+document.addEventListener("DOMContentLoaded", function() {
+    var imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png"
+    var smileyImageElement = document.getElementById("smiley")
+    smileyImageElement.src = imageUrl
+})
